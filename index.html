@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+    <header>
+        <nav class="logo-button"> <!-- logo -->
+            <a href="index.html">
+                <img src="images/Thriftcore_logo.png" alt="Logo">
+            </a>
+        </nav>
+
+        <nav class="collection-button"> <!-- collection -->
+        <a href="collection.html">
+            <button>Collection's</button>
+        </a>
+        </nav>
+
+        <nav class="search-bar"> <!-- search bar -->
+            <form>
+                <img src="images/search_bar.png" alt="Search">
+                <input type="text" placeholder="Search...">
+             </form>
+        </nav>
+
+        <div class="icons"> <!-- icons -->
+            <a href="#loginModal"><img src="images/user.png" alt="User"></a>
+            <a href="#cartModal"><img src="images/cart.png" alt="Cart"></a>
+        </div>
+
+        <nav class="about-button"> <!-- about us-->
+            <a href="aboutus.html">
+                <button>About Us</button>
+            </a>
+        </nav>
+    </header>
+
+    <!-- MODALS -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content-login">
+            <a href="#" class="close">&times;</a>
+                <img src="images/Thriftcore_logo.png" alt="Logo" class="logo-img">
+                    <h2>Login</h2>
+                        <input type="text" placeholder="Username"><br><br>
+                        <input type="password" placeholder="Password"><br>
+                        <p>New? <u>Create an account</u></p>
+                        <button>Log In</button>
+        </div>
+    </div>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content-cart">
+            <a href="#" class="close">&times;</a>
+            <h2 class="yourcart">Your Cart</h2>
+                <div class="cart-items">
+                    <div class="item">
+                        <img src="https://i.pinimg.com/736x/25/a7/4e/25a74e83cf7049a62362ba38b3909191.jpg" alt="Item 1">
+                        <p>Item 1 </p>
+                        <h2>₱499</h2>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.pinimg.com/736x/62/84/3e/62843e5095d079d8c24291b3a4572ee6.jpg" alt="Item 2">
+                        <p>Item 2 </p>
+                        <h2>₱499</h2>
+                    </div>
+
+                    <div class="item">
+                        <img src="https://i.pinimg.com/736x/20/89/65/20896554ac7e8053ddc721c1e5f0ae46.jpg" alt="Item 3">
+                        <p>Item 3 </p>
+                        <h2>₱499</h2>
+                    </div>
+                </div>
+            <h2>Total: 998</h2>
+            <button class="cart-button">Checkout</button>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section-header">
+        <div class="hero-header">
+            <h1>Thriftcore</h1>
+            <blockquote>Welcome to Thriftcoreph — a fresh take on online fashion that’s bold, affordable, and effortlessly stylish.<br> 
+                This isn’t your typical clothing store. We’ve reimagined the shopping experience by offering complete outfit sets curated from thrifted gems.<br>
+                    No more endless scrolling or mismatched pieces — just choose a look, place your order, and get it delivered to your doorstep. 
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="hero-section-body">
+        <div class="hero-body">
+            <h2 class="feature-collections">
+                Featured Collections
+            </h2>
+            
+            <div class="featured-images">
+                <div class="feature-img">
+                    <img src="https://i.pinimg.com/736x/28/6f/cb/286fcb57ce48f8b820a671a2efe92b9d.jpg" alt="feature-fairy-img">
+                    <button>Fairycore</button>
+                </div>
+
+                <div class="feature-img">
+                    <img src="https://i.pinimg.com/736x/f0/5d/d9/f05dd9b8b64fa79762c0147eff5704d3.jpg" alt="feature-soft-img">
+                    <button>Softcore</button>
+                </div>
+
+                <div class="feature-img">
+                    <img src="https://i.pinimg.com/236x/9c/e6/2a/9ce62a23456c8d33237a30399e8f67a3.jpg" alt="feature-grunge-img">
+                    <button>Grungecore</button>
+                </div>
+
+                <div class="feature-img">
+                    <img src="https://i.pinimg.com/736x/98/4c/95/984c9508f036fbfc7d1626ccdd7d228c.jpg" alt="feature-acubicore-img">
+                    <button>Acubicore</button>
+                </div>
+            </div>
+
+            <a href="collections.html">
+                <button class="shopnow-button">
+                    Shop now
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-section-bg">
+            <h3>Thriftcore</h3>
+            <ul class="footer-horizontal">
+                <li>© 2025 thriftcoreph. All rights reserved.</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+            </ul>
+
+            <ul class="footer-vertical">
+                <li>Contacts</li>
+                <li>About us</li>
+                <li>Help/FAQ</li>
+            </ul>
+
+            <div class="footer-icons">
+                <img src="images/instagram.png" alt="insta-favicon">
+                <img src="images/facebook.png" alt="fb-favicon">
+            </div>
+
+            
+
+        </div>
+        
+    </footer>
+</body>
+
+</html>
