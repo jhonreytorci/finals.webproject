@@ -311,3 +311,125 @@ button {
         color: #e084ba;
         cursor: pointer;
     }
+
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .logo-button img {
+        height: 60px;
+    }
+
+    button {
+        height: 45px;
+        width: 120px;
+        font-size: 16px;
+    }
+
+    /* SEARCH BAR */
+    .search-bar form {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    /* ICONS */
+    .icons img {
+        width: 55px;
+        height: 55px;
+    }
+
+    /* MODALS — CENTER FIX */
+    .modal {
+        padding-left: 0;
+        padding-top: 100px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .modal-content-login,
+    .modal-content-cart {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .cart-items div.item {
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+    /* HERO SECTIONS */
+    .hero-section-header,
+    .hero-section-body {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .hero-header h1 {
+        font-size: 2rem;
+        text-wrap: balance;
+    }
+
+    .hero-header blockquote {
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    /* FEATURED IMAGES */
+    .featured-images {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .feature-img img {
+        width: 90%;
+        height: auto;
+    }
+
+    .feature-collections {
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .shopnow-button {
+        width: 150px;
+        height: 45px;
+        margin-top: 30px;
+    }
+
+    /* FOOTER */
+    .footer-section-bg {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer-horizontal {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .footer-vertical {
+        gap: 5px;
+        font-size: 14px;
+    }
+
+    .footer-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
