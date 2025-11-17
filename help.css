@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --- BACKGROUND HEADER --- */
+.hero-helpsection-header, .hero-helpsection-body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.hero-helpsection-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2ebe9;
+    padding: 10px 10px;
+    min-height: 70px;
+}
+.hero-helpsection-header h2 {
+    background-color: #82bfb7;
+    display: inline-block;
+    padding: 5px 80px;
+    border-radius: 50px;
+}
+/* --- BACKGROUND BODY --- */
+.hero-helpsection-body {
+    background-color: #eddcd9;
+    padding: 20px 10px;
+    margin: 10px auto;
+
+}
+
+/* --- CONTENTS --- */
+.help-contents {
+    display: flex;
+    flex-wrap: wrap;
+}
+.help-section-column1 {
+    margin-left: 40px;
+}
+.help-contents > div {
+    flex: 0 0 calc(48% - 10px);      /* each column ~half width */
+    box-sizing: border-box;
+}
+
+.hero-helpsection-body h3 {
+    background-color: #d6b9b3;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 50px;
+    margin: 0 0 10px 0;
+}
+.hero-helpsection-body img {
+    max-width: 80%;
+    height: auto;       /* or any height you want */
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.hero-helpsection-body .box-help-img  {
+    width: 80%;
+    height: auto;       /* or any height you want */
+    border-radius: 10px;
+}
+
+/* --- FOR RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .help-contents {
+        flex-direction: column;  /* stack columns vertically */
+    }
+    .help-contents > div {
+        flex: 1 1 100%;          /* each column takes full width */
+    }
+}
