@@ -64,7 +64,7 @@ html, body {
     height: auto;       /* or any height you want */
     border-radius: 10px;
 }
-.help-section-column2 .faqlist li {
+.help-section-column2 ul .faqlist li {
     text-decoration: none;
 }
 
@@ -78,4 +78,5 @@ html, body {
     }
 
 }
+
 
