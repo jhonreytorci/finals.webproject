@@ -1,0 +1,159 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* BACKGROUND HEADER */
+.hero-collectionsection-header, .hero-collectionsection-body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.hero-collectionsection-header {
+    display: flex;
+    background-color: #f2ebe9;
+    padding: 10px 10px;
+    min-height: 70px;
+    flex-wrap: nowrap;
+    gap: 30px;
+}
+.hero-collectionsection-header button {
+    margin-top: 10px;
+    padding: 10px 30px;
+}
+
+/* --- BUTTON DROPDOWN --- */
+.dropdown {
+    position: relative;
+}
+.style-content, .size-content, .condition-content, .price-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.style-content h3, .size-content h3, .condition-content h3 , .price-content h3 {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.style-content h3:hover, .size-content h3:hover, .condition-content h3:hover , .price-content h3:hover {
+    background-color: #f1f1f1
+}
+.dropdown:hover .style-content, 
+.dropdown:hover .size-content, 
+.dropdown:hover .condition-content, 
+.dropdown:hover .price-content {
+    display: block;
+}
+.dropdown:hover .style-dropbtn,
+.dropdown:hover .size-dropbtn,
+.dropdown:hover .condition-dropbtn,
+.dropdown:hover .price-dropbtn {
+    background-color: #82bfb7;
+}
+
+/* --- BACKGROUND BODY --- */
+.hero-collectionsection-body {
+    background-color: #eddcd9;
+    padding: 20px 10px;
+    margin: 10px auto;
+}
+.hero-collectionsection-body h2 {
+    background-color: #d6b7b3;
+    color: white;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+
+/* --- COLLECTIONS --- */
+.fairycore, .softcore, .grungecore, .acubicore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.collection-img {
+    flex: 1 1 200px;
+    max-width: 250px;
+}
+.collection-img img {
+    width: 80%;
+    height: 200px;       
+    object-fit: cover;   
+    border-radius: 10px;
+}
+
+.collection-img h3 {
+    margin: 0;
+}
+.collection-img button {
+    margin-top: 0;
+    padding: 8px 15px;
+    border-radius: 0px;
+    background-color: #53847e;
+}
+
+/* --- FOR RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .hero-collectionsection-header button {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    /* 3 per row */
+    .collection-img {
+        flex: 1 1 calc(33.33% - 10px);
+        max-width: calc(33.33% - 10px);
+    }
+
+    .collection-img img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-collectionsection-header {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .hero-collectionsection-header button {
+        padding: 6px 14px;
+        font-size: 12px;
+    }
+
+    /* 2 per row */
+    .collection-img {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
+    .collection-img img {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-collectionsection-header button {
+        padding: 4px 10px;
+        font-size: 11px;
+    }
+
+    /* 1 per row */
+    .collection-img {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .collection-img img {
+        height: 120px;
+    }
+}
