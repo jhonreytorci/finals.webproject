@@ -64,7 +64,7 @@ html, body {
     height: auto;       /* or any height you want */
     border-radius: 10px;
 }
-.faqlist li {
+.faq-list li{
     list-style: none;
 }
 
@@ -78,6 +78,3 @@ html, body {
     }
 
 }
-
-
-
