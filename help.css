@@ -65,7 +65,7 @@ html, body {
     border-radius: 10px;
 }
 .help-section-column2 .faqlist li {
-    tex-decoration: none;
+    text-decoration: none;
 }
 
 /* --- FOR RESPONSIVE --- */
@@ -78,3 +78,4 @@ html, body {
     }
 
 }
+
