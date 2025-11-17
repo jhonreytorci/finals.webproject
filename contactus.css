@@ -75,21 +75,29 @@ label {
     border-radius: 50px;
     margin: 0;
 }
-.contact-content button {
+.index-button {
     margin: 0;
     background-color: #82bfb7;
     color:white;
-    font-size: 1em;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
     display: block;
     margin-left: auto;
-    padding: 5px 10px;
+    padding: 5px 15px;
+}
+.index-button:hover,
+.submit-button:hover {
+    transform: scale(1.1);    
+    transition: 0.3s;         
+    cursor: pointer;           
 }
 
 @media (max-width:768px) {
     .message-box {
         width: 80%;
         padding-top: 10px;
-        padding-bottom: 200px;      /* adjust freely */
+        padding-bottom: 200px;    
         padding-right: 30px;
         border-radius: 20px;
         border: 1px solid #ccc;
