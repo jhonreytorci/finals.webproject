@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help/FAQ</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="help.css">
+
+
+</head>
+<body>
+  <!-- Header -->
+    <header>
+    <nav class="main-nav">
+        <div class="logo-button">
+            <a href="index.html">
+                <img src="images/Thriftcore_logo.png" alt="Logo">
+            </a>
+        </div>
+
+        <div class="nav-row">
+            <div class="collection-button">
+                <a href="collection.html">
+                    <button>Collection's</button>
+                </a>
+            </div>
+
+            <div class="search-bar">
+                <form>
+                    <img src="images/search_bar.png" alt="Search">
+                    <input type="text" placeholder="Search...">
+                </form>
+            </div>
+
+            <div class="icons">
+                <a href="#loginModal"><img src="images/user.png" alt="User"></a>
+                <a href="#cartModal"><img src="images/cart.png" alt="Cart"></a>
+            </div>
+
+            <div class="about-button">
+                <a href="aboutus.html">
+                    <button>About Us</button>
+                </a>
+            </div>  
+        </div>
+    </nav>
+</header>
+
+<!-- MODALS -->
+<div id="loginModal" class="modal">
+    <div class="modal-content-login">
+        <a href="#" class="close">&times;</a>
+            <img src="images/Thriftcore_logo.png" alt="Logo" class="logo-img">
+                <h2>Login</h2>
+                    <input type="text" placeholder="Username"><br><br>
+                    <input type="password" placeholder="Password"><br>
+                    <p>New? <u>Create an account</u></p>
+                    <button>Log In</button>
+    </div>
+</div>
+
+<div id="cartModal" class="modal">
+    <div class="modal-content-cart">
+        <a href="#" class="close">&times;</a>
+        <h2 class="yourcart">Your Cart</h2>
+            <div class="cart-items">
+                <div class="item">
+                    <img src="https://i.pinimg.com/736x/25/a7/4e/25a74e83cf7049a62362ba38b3909191.jpg" alt="Item 1">
+                    <p>Item 1 </p>
+                    <h2>₱499</h2>
+                </div>
+
+                <div class="item">
+                    <img src="https://i.pinimg.com/736x/62/84/3e/62843e5095d079d8c24291b3a4572ee6.jpg" alt="Item 2">
+                    <p>Item 2 </p>
+                    <h2>₱499</h2>
+                </div>
+
+                <div class="item">
+                    <img src="https://i.pinimg.com/736x/20/89/65/20896554ac7e8053ddc721c1e5f0ae46.jpg" alt="Item 3">
+                    <p>Item 3 </p>
+                    <h2>₱499</h2>
+                </div>
+            </div>
+        <h2>Total: 998</h2>
+        <button class="cart-button">Checkout</button>
+    </div>
+</div>
+
+<!-- HELP SECTION -->
+<section class="hero-helpsection-header">
+    <h2>Help/FAQ</h2>
+</section>
+<section class="hero-helpsection-body">
+    <div class="help-contents">
+        <div class="help-section-column1"> <!-- COLUMN 1 -->
+            <h3>How to Order</h3>
+            <p>Browse collections by style or use filters to narrow down your search.</p>
+            <img src="images/help.png" alt="help.png">
+            <p>Click on an item to view details.</p>
+            <img src="images/help1.png" alt="help1.png" class="box-help-img">
+        </div>
+
+        <div class="help-section-column2"> <!-- COLUMN 2 -->
+            <h3>Delivery Timelines</h3>
+            <p>Metro Manila: 2–4 business days</p>
+            <ul>
+                <li>Tracking info will be sent via email once shipped.</li>
+            </ul>
+
+            <h3>Payment Methods</h3>
+            <p>We accept:</p>
+            <ul>
+                <li>GCash</li>
+                <li>Paypal</li>
+                <li>Credit/Debit Cards</li>
+                <li>Bank Transfer (details provided at checkout)</li>
+            </ul>
+
+            <h3>Returns</h3>
+            <ul>
+                <li>We accept returns within 7 days of delivery for store credit.</li>
+                <li>Items must be in original condition.</li>
+                <li>Return shipping is at buyer’s expense.</li>
+            </ul>
+
+            <h3>Frequently Asked Questions</h3>
+            <ul>
+                <li>Q: Are items restocked? </li> 
+                <li>Q: Can I reserve an item? </li>
+                <li>Q: Do you ship internationally? </li> 
+                <li>Q: How do I know if an item will fit?</li>
+                <li>Q: Can I cancel my order?</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER SECTION -->
+<footer class="footer-section">
+    <div class="footer-section-bg">
+        <h3><a href="index.html">Thriftcore</a></h3>
+        <ul class="footer-horizontal">
+            <li>© 2025 All rights reserved.</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+        </ul>
+
+        <ul class="footer-vertical">
+            <li><a href="contactus.html">Contacts</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href="help.html">Help/FAQ</a></li>
+        </ul>
+
+        <div class="footer-icons">
+            <img src="images/instagram.png" alt="insta-favicon">
+            <img src="images/facebook.png" alt="fb-favicon">
+        </div>
+    </div>
+</footer>
+</body>
+</html>
