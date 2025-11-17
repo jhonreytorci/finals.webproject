@@ -17,9 +17,16 @@ html, body {
     flex-wrap: nowrap;
     gap: 30px;
 }
-.hero-collectionsection-header button {
-    margin-top: 10px;
-    padding: 10px 30px;
+.style-dropbtn, 
+.size-dropbtn, 
+.condition-dropbtn, 
+.price-dropbtn {
+    background-color: #d6b7b3;
+    border: none;
+    margin: 10px auto;
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
 }
 
 /* --- BUTTON DROPDOWN --- */
@@ -30,17 +37,22 @@ html, body {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
+    border-radius: 40px;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-.style-content h3, .size-content h3, .condition-content h3 , .price-content h3 {
+.style-content a, 
+.size-content h3, 
+.condition-content h3, 
+.price-content h3 {
     color: black;
-    padding: 12px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     display: block;
 }
-.style-content h3:hover, .size-content h3:hover, .condition-content h3:hover , .price-content h3:hover {
-    background-color: #f1f1f1
+
+.style-content a:hover, .size-content h3:hover, .condition-content h3:hover , .price-content h3:hover {
+    background-color: #eeeaea;
 }
 .dropdown:hover .style-content, 
 .dropdown:hover .size-content, 
@@ -78,6 +90,7 @@ html, body {
     text-align: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 .collection-img {
     flex: 1 1 200px;
@@ -93,30 +106,59 @@ html, body {
 .collection-img h3 {
     margin: 0;
 }
-.collection-img button {
-    margin-top: 0;
-    padding: 8px 15px;
-    border-radius: 0px;
+
+.collection-head  {
     background-color: #53847e;
+    color: white;
+    margin-top: 10px auto;
+    margin-left: 20px;
+    padding: 10px 35px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
 }
+.collection-img button {
+    background-color: #d6b7b3;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
 
 /* --- FOR RESPONSIVE --- */
 @media (max-width: 1024px) {
-    .hero-collectionsection-header button {
-        padding: 8px 20px;
-        font-size: 14px;
+    .style-dropbtn, 
+    .size-dropbtn, 
+    .condition-dropbtn, 
+    .price-dropbtn {
+        padding: 15px 25px;
+        font-size: 1rem;
     }
 
-    /* 3 per row */
+    /* Collections: 3 per row */
     .collection-img {
-        flex: 1 1 calc(33.33% - 10px);
-        max-width: calc(33.33% - 10px);
+        flex: 1 1 calc(33.33% - 15px);
+        max-width: calc(33.33% - 15px);
     }
 
     .collection-img img {
         height: 180px;
     }
+
+    /* Collection heading and button smaller */
+    .collection-head {
+        font-size: 1rem;
+        padding: 8px 25px;
+    }
+
+    .collection-img button {
+        font-size: 1rem;
+        padding: 5px 15px;
+    }
 }
+
 
 @media (max-width: 768px) {
     .hero-collectionsection-header {
@@ -125,12 +167,15 @@ html, body {
         justify-content: center;
     }
 
-    .hero-collectionsection-header button {
-        padding: 6px 14px;
-        font-size: 12px;
+    .style-dropbtn, 
+    .size-dropbtn, 
+    .condition-dropbtn, 
+    .price-dropbtn {
+        padding: 12px 20px;
+        font-size: 0.95rem;
     }
 
-    /* 2 per row */
+    /* Collections: 2 per row */
     .collection-img {
         flex: 1 1 calc(50% - 10px);
         max-width: calc(50% - 10px);
@@ -139,15 +184,41 @@ html, body {
     .collection-img img {
         height: 150px;
     }
-}
 
-@media (max-width: 480px) {
-    .hero-collectionsection-header button {
-        padding: 4px 10px;
-        font-size: 11px;
+    .collection-head {
+        font-size: 0.95rem;
+        padding: 6px 20px;
     }
 
-    /* 1 per row */
+    .collection-img button {
+        font-size: 0.95rem;
+        padding: 4px 15px;
+    }
+
+    .size-content h3, 
+    .condition-content h3, 
+    .price-content h3 {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero-collectionsection-header {
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .style-dropbtn, 
+    .size-dropbtn, 
+    .condition-dropbtn, 
+    .price-dropbtn {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+    }
+
+    /* Collections: 1 per row */
     .collection-img {
         flex: 1 1 100%;
         max-width: 100%;
@@ -155,5 +226,21 @@ html, body {
 
     .collection-img img {
         height: 120px;
+    }
+
+    .collection-head {
+        font-size: 0.85rem;
+        padding: 5px 15px;
+    }
+
+    .collection-img button {
+        font-size: 0.85rem;
+        padding: 4px 12px;
+    }
+    .size-content h3, 
+    .condition-content h3, 
+    .price-content h3 {
+        font-size: 0.85rem;
+        display: block; 
     }
 }
