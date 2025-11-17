@@ -64,6 +64,9 @@ html, body {
     height: auto;       /* or any height you want */
     border-radius: 10px;
 }
+.help-section-column2 .faqlist li {
+    tex-decoration: none;
+}
 
 /* --- FOR RESPONSIVE --- */
 @media (max-width: 1024px) {
@@ -73,4 +76,5 @@ html, body {
     .help-contents > div {
         flex: 1 1 100%;          /* each column takes full width */
     }
+
 }
