@@ -27,6 +27,7 @@ html, body {
     padding: 20px 30px;
     border-radius: 50px;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 
 /* --- BUTTON DROPDOWN --- */
@@ -244,3 +245,4 @@ html, body {
         display: block; 
     }
 }
+
