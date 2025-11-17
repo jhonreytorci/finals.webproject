@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- BACKGROUND HEADER--- */
+.hero-aboutsection-header, .hero-aboutsection-body {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.hero-aboutsection-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2ebe9;
+    padding: 10px 10px;
+    min-height: 70px;
+}
+
+/* --- BACKGROUND BODY --- */
+.hero-aboutsection-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eddcd9;
+    padding: 10px 10px;
+    margin: 10px auto;
+    gap: 30px;
+}
+
+/* --- CONTENTS --- */
+.aboutus-box, .ourmission-box, .review-box {
+    text-align: center;
+    border-radius: 50px;  
+}
+
+.aboutus-box h2, .ourmission-box h2, .review-box h2{
+    display: inline-block;
+    background-color: #82bfb7;
+    border-radius: 50px;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.missions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.aboutus-box p, .mission1, .review-box p {
+    background-color: #d6b9b3;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 10px 10px;
+}
+
+.review-box p {
+    text-align: left;
+}
+
+/* --- FOR RESPONSIVE --- */
+@media (max-width: 1024px) {
+
+    /* 3 main boxes vertically */
+    .hero-aboutsection-body {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .aboutus-box,
+    .ourmission-box,
+    .review-box {
+        width: 100%;
+        max-width: 450px; 
+    }
+    .aboutus-box h2,
+    .ourmission-box h2,
+    .review-box h2 {
+        font-size: 1rem;
+        padding: 10px 14px;
+    }
+    .aboutus-box p,
+    .review-box p,
+    .mission1 p {
+        font-size: 1rem;
+        padding: 10px 12px;
+    }
+    .missions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .mission1 {
+        width: 40%;
+    }
+}
