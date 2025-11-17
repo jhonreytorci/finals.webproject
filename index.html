@@ -9,7 +9,7 @@
 
 
 </head>
-    
+
 <body>
   <!-- HEADER -->
     <header>
@@ -21,13 +21,9 @@
         </div>
 
         <div class="nav-row">
-            <div class="collection-button">
-                <button>
-                    <a href="collection.html">
-                        Collection's
-                    </a>
-                </button>
-            </div>
+            <button class="collection-button" onclick="location.href='collection.html'">
+                Collection's
+            </button>
 
             <div class="search-bar">
                 <form>
@@ -41,13 +37,9 @@
                 <a href="#cartModal"><img src="images/cart.png" alt="Cart"></a>
             </div>
 
-            <div class="about-button">
-                <button>
-                    <a href="aboutus.html">
-                        About Us
-                    </a>
-                </button>
-            </div>  
+            <button class="aboutus-button" onclick="location.href='aboutus.html'">
+                About Us
+            </button>
         </div>
     </nav>
 </header>
@@ -61,7 +53,7 @@
                     <input type="text" placeholder="Username"><br><br>
                     <input type="password" placeholder="Password"><br>
                     <p>New? <u>Create an account</u></p>
-                    <button>Log In</button>
+                    <button class="login-button">Log In</button>
     </div>
 </div>
 
@@ -113,30 +105,26 @@
         <div class="featured-images">
             <div class="feature-img">
                 <img src="https://i.pinimg.com/736x/28/6f/cb/286fcb57ce48f8b820a671a2efe92b9d.jpg" alt="feature-fairy-img">
-                <button>Fairycore</button>
+                <a href="#fairycore" class="feature-anchor">Fairycore</a>
             </div>
 
             <div class="feature-img">
                 <img src="https://i.pinimg.com/736x/f0/5d/d9/f05dd9b8b64fa79762c0147eff5704d3.jpg" alt="feature-soft-img">
-                <button>Softcore</button>
+                <a href="#softcore" class="feature-anchor">Softcore</a>
             </div>
 
             <div class="feature-img">
                 <img src="https://i.pinimg.com/236x/9c/e6/2a/9ce62a23456c8d33237a30399e8f67a3.jpg" alt="feature-grunge-img">
-                <button>Grungecore</button>
+                <a href="#grungecore" class="feature-anchor">Grungecore</a>
             </div>
 
             <div class="feature-img">
                 <img src="https://i.pinimg.com/736x/98/4c/95/984c9508f036fbfc7d1626ccdd7d228c.jpg" alt="feature-acubicore-img">
-                <button>Acubicore</button>
+                <a href="#acubicore" class="feature-anchor">Acubicore</a>
             </div>
         </div>
 
-        <a href="collection.html">
-            <button class="shopnow-button">
-                Shop now
-            </button>
-        </a>
+        <button class="shopnow-button" onclick="location.href='collection.html'">Shop Now</button>
     </div>
 </section>
 
@@ -165,7 +153,4 @@
 </footer>
 
 </body>
-
 </html>
-
-
