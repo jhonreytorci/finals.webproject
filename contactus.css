@@ -43,7 +43,7 @@ html, body {
     margin-top: 5px;
     margin-bottom: 20px;
 }
-label {
+.name-form, .email-form {
     display: block;
     text-align: left;
     margin-top: 0 ;
@@ -97,7 +97,7 @@ label {
     .message-box {
         width: 80%;
         padding-top: 10px;
-        padding-bottom: 200px;    
+        padding-bottom: 200px;      /* adjust freely */
         padding-right: 30px;
         border-radius: 20px;
         border: 1px solid #ccc;
