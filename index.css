@@ -55,6 +55,7 @@ h1, h2, h3, h4, h5, h6, button {
     font-size: 1.5rem;
     border-radius: 50px;
     border: none;
+    cursor: pointer;
 }
 .shopnow-button {
     background-color: #82bfb7;
@@ -353,6 +354,7 @@ h1, h2, h3, h4, h5, h6, button {
 .footer-icons img {
     height: 30px;
     width: auto;
+    cursor: pointer;
 }
 
 .footer-section-bg h3 a:hover, .footer-vertical li a:hover {
@@ -362,6 +364,7 @@ h1, h2, h3, h4, h5, h6, button {
     transition: 0.3s;
     transform: scale(1.3);
 }
+
 
 
 
