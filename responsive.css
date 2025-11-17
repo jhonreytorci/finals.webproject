@@ -1,0 +1,241 @@
+
+@media (max-width: 1440px) {
+    .main-nav {
+        flex-wrap: wrap;      /* allow logo to be on top */
+        justify-content: center;
+        gap: 0px;
+        padding: 5px 10px;
+    }
+
+    /* LOGO */
+    .logo-button {
+        flex-basis: 100%;    
+        display: flex;
+        justify-content: center;
+    }
+    .logo-button img {
+        height: 60px;
+        border-radius: 30px;
+    }
+
+    /* WRAP REST OF NAV IN SINGLE LINE */
+    .nav-row {
+        flex-basis: 100%;   
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* BUTTONS */
+    button {
+        padding: 20px 8px;
+        font-size: 18px;
+        border-radius: 25px;
+    } 
+
+    /* SEARCH BAR */
+    .search-bar form {
+        width: auto;        
+        max-width: 200px;
+        gap: 2px;
+        padding: 4px;
+    }
+    .search-bar img {
+        height: 18px;
+    }
+    .search-bar input {
+        font-size: 13px;
+        padding: 4px 6px;
+
+    }
+
+    /* ICONS */
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+    }
+    .icons img {
+        height: 40px;
+        border-width: 1.5px;
+    }
+
+    /*MODAL SECTION*/
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        justify-content: center;  
+        align-items: center;       
+        padding: 0;                
+        z-index: 1000;
+    }
+
+    .modal:target {
+        display: flex;
+    }
+    .modal-content-login,
+    .modal-content-cart {
+        width: 80%;                
+        max-width: 350px;          
+        text-align: center;
+    }
+    .modal-content-login p,
+    .cart-items h2 {
+        font-size: 14px;
+    }
+
+    .modal-content-login button,
+    .cart-button {
+        height: 40px;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    /* HERO SECTION */
+    .hero-section-body,
+    .hero-section-header {
+        display: flex;
+        justify-content: center;   
+        align-items: center;      
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 0;
+        min-height: 300px; 
+    }
+
+    .hero-section-header {
+        background: #f2ebe9; 
+    }
+     .hero-header blockquote {
+        white-space: normal;   
+        text-align: center;
+        font-size: clamp(1rem, 3.5vw, 1.3rem); /* responsive */
+        margin: 0 auto;
+        padding: 0 10px;        
+    }
+    .hero-section-body {
+        background-color: #eddcd9;
+        margin: 10px auto;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .logo-button img {
+        height: 50px;
+        border-radius: 25px;
+    }
+    button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    .search-bar form {
+        max-width: 150px;
+        gap: 3px;
+        padding: 3px;
+    }
+    .search-bar img {
+        height: 16px;
+    }
+    .search-bar input {
+        font-size: 12px;
+        padding: 3px 4px;
+    }
+    .icons {
+        gap: 10px;
+    }
+    .icons img {
+        height: 30px;
+        border-width: 1px;
+    }
+
+    /*MODAL SECTION*/
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        justify-content: center;  
+        align-items: center;       
+        padding: 0;                
+        z-index: 1000;
+    }
+
+    .modal:target {
+        display: flex;
+    }
+
+    /* MODAL CONTENT */
+    .modal-content-login,
+    .modal-content-cart {
+        width: 90%;                
+        max-width: 250px;        
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    .modal-content-login p,
+    .cart-items h2 {
+        font-size: 12px;
+    }
+    .modal-content-login button,
+    .cart-button {
+        height: 35px;
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    .hero-header blockquote {
+        font-size: clamp(0.9rem, 4vw, 1.1rem);
+        padding: 0 12px;
+    }
+        .feature-img {
+        flex: 0 0 45%;   
+        margin-bottom: 20px; 
+    }
+    .featured-images {
+        gap: 10px;       
+
+    /* FOOTER SECTION */
+    }
+    .footer-section-bg {
+        gap: 20px;
+        padding: 8px 8px;
+    
+    }
+    .footer-horizontal {
+        gap: 5px;          
+        font-size: 10px;     
+        flex-wrap: wrap;     
+        justify-content: center;
+    }
+    .footer-vertical {
+        gap: 8px;
+        font-size: 12px;
+    }
+    .footer-section-bg h3 {
+        font-size: 16px;     
+    }
+    .footer-icons {
+        gap: 10px;
+    }
+    .footer-icons img {
+        height: 20px;        
+    }
+}
+
+
+
+
+
+
+
