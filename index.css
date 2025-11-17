@@ -4,6 +4,7 @@ html, body {
 }
 
 /* --- GLOBAL  --- */
+
 a {
     text-decoration: none;
 }
@@ -64,6 +65,7 @@ h1, h2, h3, h4, h5, h6, button {
     font-size: 1.5rem;
     border-radius: 50px;
     margin: 30px auto;
+    cursor: pointer;
 }
 .collection-button:hover,
 .aboutus-button:hover,
@@ -77,7 +79,12 @@ h1, h2, h3, h4, h5, h6, button {
 .shopnow-button:hover,
 .icons img:hover,
 .cart-button:hover,
-.login-button:hover {
+.login-button:hover,
+.collection-img button:hover,
+.style-dropbtn:hover,
+.size-dropbtn:hover,
+.condition-dropbtn:hover,
+.price-dropbtn:hover {
     transition: 0.3s;
     transform: scale(1.1);
 }
@@ -364,7 +371,6 @@ h1, h2, h3, h4, h5, h6, button {
     transition: 0.3s;
     transform: scale(1.3);
 }
-
 
 
 
